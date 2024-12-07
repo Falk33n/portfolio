@@ -1,16 +1,20 @@
 <script lang="ts">
 	import { GlowEffect } from '$lib/components/decorative';
-	import { Navbar } from '$lib/components/sections';
+	import { Header, Navbar } from '$lib/components/sections';
 	import '$src/app.css';
 	import { ModeWatcher } from 'mode-watcher';
 
 	let { children } = $props();
 </script>
 
-<ModeWatcher />
+<div class="px-6 py-12 md:px-12 md:py-16 lg:px-14 lg:py-28">
+	<ModeWatcher />
+	<GlowEffect />
 
-<GlowEffect />
+	<Header />
+	<Navbar />
 
-<Navbar />
-
-<main id="main-content">{@render children()}</main>
+	<main id="main-content">
+		{@render children()}
+	</main>
+</div>
