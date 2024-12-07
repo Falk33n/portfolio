@@ -2,7 +2,7 @@
 	import type { TypographyProps } from '$lib/components/typography';
 	import { cn } from '$lib/utils';
 
-	let { children, class: className }: TypographyProps = $props();
+	let { children, class: className, ...props }: TypographyProps = $props();
 </script>
 
 <h2
@@ -10,6 +10,7 @@
 		'scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0',
 		className,
 	)}
+	{...props}
 >
 	{@render children()}
 </h2>
