@@ -1,1 +1,1 @@
-export { CursorGlowEffect } from './cursor-glow-effect';
+export { GlowEffect } from './glow-effect';
