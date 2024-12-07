@@ -1,6 +1,6 @@
 <script lang="ts">
-	import type { TypographyProps } from '$lib/components/typography';
-	import { cn } from '$lib/utils';
+	import type { TypographyProps } from '$components/typography';
+	import { cn } from '$utils';
 
 	let { children, class: className, ...props }: TypographyProps = $props();
 </script>

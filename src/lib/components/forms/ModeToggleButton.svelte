@@ -4,8 +4,8 @@
 		TooltipContent,
 		TooltipProvider,
 		TooltipTrigger,
-	} from '$lib/components/feedback';
-	import { Button } from '$lib/components/forms';
+	} from '$components/feedback';
+	import { Button } from '$components/forms';
 	import { Moon, Sun } from 'lucide-svelte';
 	import { mode, toggleMode } from 'mode-watcher';
 

@@ -1,12 +1,12 @@
 <script lang="ts">
-	import { H1, H2, P } from '$lib/components/typography';
 	import {
 		Tooltip,
 		TooltipContent,
 		TooltipProvider,
 		TooltipTrigger,
-	} from '$src/lib/components/feedback';
-	import { Button as Link } from '$src/lib/components/forms';
+	} from '$components/feedback';
+	import { Button as Link } from '$components/forms';
+	import { H1, H2, P } from '$components/typography';
 </script>
 
 <header class="space-y-3">
