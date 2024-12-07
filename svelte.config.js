@@ -7,6 +7,10 @@ const config = {
 	kit: {
 		alias: {
 			$src: './src',
+			$lib: './src/lib',
+			$components: './src/lib/components',
+			$utils: './src/lib/utils',
+			$hooks: './src/lib/hooks',
 		},
 		adapter: adapter(),
 	},
