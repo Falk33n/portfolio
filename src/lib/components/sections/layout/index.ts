@@ -1,2 +1,4 @@
-export { Header } from './header';
-export { Navbar } from './navbar';
+import Header from './Header.svelte';
+import Navbar from './Navbar.svelte';
+
+export { Header, Navbar };

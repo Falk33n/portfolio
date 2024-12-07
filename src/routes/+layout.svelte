@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { GlowEffect } from '$lib/components/decorative';
-	import { Header, Navbar } from '$lib/components/sections';
+	import { Header, Navbar } from '$lib/components/sections/layout';
 	import '$src/app.css';
 	import { ModeWatcher } from 'mode-watcher';
 

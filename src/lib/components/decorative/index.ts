@@ -1,1 +1,3 @@
-export { GlowEffect } from './glow-effect';
+import GlowEffect from './GlowEffect.svelte';
+
+export { GlowEffect };
