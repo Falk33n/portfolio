@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { GlowEffect } from '$components/decorative';
-	import { ModeToggleButton } from '$components/forms';
 	import { Header, SocialMediaNav } from '$components/sections/layout';
 	import '$src/app.css';
 	import { ModeWatcher } from 'mode-watcher';
@@ -118,14 +117,11 @@
 	/>
 </svelte:head>
 
-<ModeWatcher />
-<GlowEffect />
-
-<!-- temporary -->
-<ModeToggleButton />
-
 <Header />
 <SocialMediaNav />
+
+<ModeWatcher />
+<GlowEffect />
 
 <main id="main-content">
 	{@render children()}
