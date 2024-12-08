@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { GlowEffect } from '$components/decorative';
-	import { Header, SocialMediaNav } from '$components/sections/layout';
+	import { Navbar } from '$components/sections/layout';
 	import '$src/app.css';
 	import { ModeWatcher } from 'mode-watcher';
 
@@ -117,8 +117,7 @@
 	/>
 </svelte:head>
 
-<Header />
-<SocialMediaNav />
+<Navbar />
 
 <ModeWatcher />
 <GlowEffect />
