@@ -1,6 +1,19 @@
+import ContactLink from './ContactLink.svelte';
 import GithubLink from './GithubLink.svelte';
 import Header from './Header.svelte';
+import LinkedInLink from './LinkedInLink.svelte';
 import Logo from './Logo.svelte';
+import Navbar from './Navbar.svelte';
+import ResumeLink from './ResumeLink.svelte';
 import SocialMediaNav from './SocialMediaNav.svelte';
 
-export { GithubLink, Header, Logo, SocialMediaNav };
+export {
+	ContactLink,
+	GithubLink,
+	Header,
+	LinkedInLink,
+	Logo,
+	Navbar,
+	ResumeLink,
+	SocialMediaNav,
+};
