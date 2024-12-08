@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { MoonHalf, Sun } from '$components/decorative/icons';
 	import {
 		Tooltip,
 		TooltipContent,
@@ -6,27 +7,25 @@
 		TooltipTrigger,
 	} from '$components/feedback';
 	import { Button } from '$components/forms';
-	import { Moon, Sun } from 'lucide-svelte';
 	import { mode, toggleMode } from 'mode-watcher';
 
-	const Icon = $derived($mode === 'light' ? Sun : Moon);
+	const Icon = $derived($mode === 'light' ? Sun : MoonHalf);
 	const title = $derived(
-		`Change the theme to ${$mode === 'light' ? 'dark Mode' : 'light Mode'}`,
+		`Change the color theme to ${$mode === 'light' ? 'dark mode' : 'light mode'}`,
 	);
 </script>
 
 <TooltipProvider>
 	<Tooltip>
-		<TooltipTrigger>
+		<TooltipTrigger onclick={toggleMode}>
 			{#snippet child({ props })}
 				<Button
-					onclick={toggleMode}
 					aria-label={title}
 					variant="outline"
 					size="icon"
 					{...props}
 				>
-					<Icon class="size-[1.2rem] transition-all dark:-rotate-90" />
+					<Icon class="scale-150 dark:rotate-90 dark:scale-125" />
 				</Button>
 			{/snippet}
 		</TooltipTrigger>
