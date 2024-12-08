@@ -1,4 +1,4 @@
 import Header from './Header.svelte';
-import Navbar from './Navbar.svelte';
+import SocialMediaNav from './SocialMediaNav.svelte';
 
-export { Header, Navbar };
+export { Header, SocialMediaNav };
