@@ -55,6 +55,8 @@
 		size = 'default',
 		ref = $bindable(null),
 		href = undefined,
+		rel = undefined,
+		target = '_self',
 		type = 'button',
 		children,
 		...restProps
@@ -65,7 +67,9 @@
 	<a
 		bind:this={ref}
 		class={cn(buttonVariants({ variant, size, className }))}
+		rel={target === '_blank' ? 'noopener noreferrer' : rel}
 		{href}
+		{target}
 		{...restProps}
 	>
 		{@render children?.()}
