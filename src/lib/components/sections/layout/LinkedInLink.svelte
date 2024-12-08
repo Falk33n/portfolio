@@ -6,9 +6,9 @@
 		TooltipTrigger,
 	} from '$components/feedback';
 	import { Button as Link } from '$components/forms';
-	import { Github } from '$components/icons';
+	import { LinkedIn } from '$components/icons';
 
-	const githubTitle = "Go to Tim Falk's GitHub profile, opens in a new tab";
+	const linkedInTitle = "Go to Tim Falk's LinkedIn profile, opens in a new tab";
 </script>
 
 <TooltipProvider>
@@ -16,18 +16,17 @@
 		<TooltipTrigger>
 			{#snippet child({ props })}
 				<Link
-					href="https://github.com/Falk33n"
-					aria-label={githubTitle}
+					href="https://www.linkedin.com/in/timfalkwebbdev/"
+					aria-label={linkedInTitle}
 					variant="outline"
 					size="icon"
 					target="_blank"
 					{...props}
 				>
-					<Github class="scale-125" />
+					<LinkedIn class="scale-125" />
 				</Link>
 			{/snippet}
 		</TooltipTrigger>
-
-		<TooltipContent>{githubTitle}</TooltipContent>
+		<TooltipContent>{linkedInTitle}</TooltipContent>
 	</Tooltip>
 </TooltipProvider>

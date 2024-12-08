@@ -6,9 +6,9 @@
 		TooltipTrigger,
 	} from '$components/feedback';
 	import { Button as Link } from '$components/forms';
-	import { Github } from '$components/icons';
+	import { CommentShare } from '$components/icons';
 
-	const githubTitle = "Go to Tim Falk's GitHub profile, opens in a new tab";
+	const contactTitle = 'Go to the contact page';
 </script>
 
 <TooltipProvider>
@@ -17,17 +17,16 @@
 			{#snippet child({ props })}
 				<Link
 					href="https://github.com/Falk33n"
-					aria-label={githubTitle}
+					aria-label={contactTitle}
 					variant="outline"
 					size="icon"
-					target="_blank"
 					{...props}
 				>
-					<Github class="scale-125" />
+					<CommentShare class="scale-125" />
 				</Link>
 			{/snippet}
 		</TooltipTrigger>
 
-		<TooltipContent>{githubTitle}</TooltipContent>
+		<TooltipContent>{contactTitle}</TooltipContent>
 	</Tooltip>
 </TooltipProvider>
