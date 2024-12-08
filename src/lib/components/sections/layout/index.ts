@@ -7,6 +7,7 @@ import Navbar from './Navbar.svelte';
 import ResumeLink from './ResumeLink.svelte';
 import SectionLink from './SectionLink.svelte';
 import SectionsNav from './SectionsNav.svelte';
+import SkipToContent from './SkipToContent.svelte';
 import SocialMediaNav from './SocialMediaNav.svelte';
 
 export {
@@ -19,5 +20,6 @@ export {
 	ResumeLink,
 	SectionLink,
 	SectionsNav,
+	SkipToContent,
 	SocialMediaNav,
 };
