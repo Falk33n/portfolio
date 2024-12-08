@@ -10,7 +10,7 @@
 </script>
 
 <a
-	class="group flex max-w-max items-center gap-4"
+	class="group -ml-1 flex max-w-max items-center gap-4 rounded-md p-1"
 	{...props}
 >
 	<span
