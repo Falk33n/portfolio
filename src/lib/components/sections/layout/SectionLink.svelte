@@ -10,7 +10,7 @@
 </script>
 
 <a
-	class="group -ml-1 flex max-w-max items-center gap-4 rounded-md p-1"
+	class="group -ml-1 flex max-w-max items-center gap-4 rounded-md p-1 text-foreground/65 transition-all hover:text-foreground focus-visible:text-foreground"
 	{...props}
 >
 	<span
