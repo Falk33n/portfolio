@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { IconProps } from '$components/decorative/icons';
+	import type { IconProps } from '$components/icons';
 	import { cn } from '$utils';
 
 	let {

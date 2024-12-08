@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { MoonHalf, Sun } from '$components/decorative/icons';
 	import {
 		Tooltip,
 		TooltipContent,
@@ -7,6 +6,7 @@
 		TooltipTrigger,
 	} from '$components/feedback';
 	import { Button } from '$components/forms';
+	import { MoonHalf, Sun } from '$components/icons';
 	import { mode, toggleMode } from 'mode-watcher';
 
 	const Icon = $derived($mode === 'light' ? Sun : MoonHalf);
