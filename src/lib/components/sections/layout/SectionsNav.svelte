@@ -4,7 +4,7 @@
 
 <nav
 	aria-label="Same-page navigation links"
-	class="mt-10 flex flex-col gap-4"
+	class="mt-10 flex flex-col gap-3"
 >
 	<SectionLink
 		href="#about"
