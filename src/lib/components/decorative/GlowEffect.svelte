@@ -2,18 +2,12 @@
 	import { cn } from '$utils';
 	import { onMount } from 'svelte';
 
-	let mouseX = $state(0);
-	let mouseY = $state(0);
-	let scrollY = $state(0);
-	let isTouchDevice = $state(false);
-
 	function updateMousePosition(e: MouseEvent) {
-		mouseX = e.clientX;
-		mouseY = e.clientY;
+		mousePosition = { x: e.clientX, y: e.clientY };
 	}
 
 	function updateScrollPosition() {
-		scrollY = window.scrollY;
+		scrollPositionY = window.scrollY;
 	}
 
 	function updateTouchDeviceStatus() {
@@ -26,6 +20,10 @@
 			window.removeEventListener('scroll', updateScrollPosition);
 		}
 	}
+
+	let mousePosition = $state({ x: 0, y: 0 });
+	let scrollPositionY = $state(0);
+	let isTouchDevice = $state(false);
 
 	onMount(() => {
 		updateTouchDeviceStatus();
@@ -50,7 +48,7 @@
 		)}
 		style={isTouchDevice
 			? `top: calc(50% + ${scrollY}px); left: -200px;`
-			: `top: ${mouseY}px; left: ${mouseX}px;`}
+			: `top: ${mousePosition.y}px; left: ${mousePosition.x}px;`}
 	></div>
 </div>
 
