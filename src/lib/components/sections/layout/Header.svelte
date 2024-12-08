@@ -3,11 +3,11 @@
 	import { H2, P } from '$components/typography';
 </script>
 
-<header class="space-y-3">
+<header class="max-w-xs space-y-3">
 	<Logo />
 
 	<H2 class="border-none pb-0 text-xl md:text-2xl">Full Stack Developer</H2>
-	<P class="max-w-xs text-foreground/80">
+	<P class="text-foreground/80">
 		I craft experiences that matter—impactful today and meaningful for the
 		future.
 	</P>
