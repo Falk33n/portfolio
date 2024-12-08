@@ -24,6 +24,7 @@
 				</Link>
 			{/snippet}
 		</TooltipTrigger>
+
 		<TooltipContent>Go to the home page</TooltipContent>
 	</Tooltip>
 </TooltipProvider>

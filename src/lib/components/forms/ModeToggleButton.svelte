@@ -13,6 +13,8 @@
 	const title = $derived(
 		`Change the color theme to ${$mode === 'light' ? 'dark mode' : 'light mode'}`,
 	);
+
+	let { class: className }: { class?: string } = $props();
 </script>
 
 <TooltipProvider>
@@ -23,14 +25,14 @@
 					aria-label={title}
 					variant="outline"
 					size="icon"
+					class={className}
 					{...props}
 				>
 					<Icon class="scale-150 dark:rotate-90 dark:scale-125" />
 				</Button>
 			{/snippet}
 		</TooltipTrigger>
-		<TooltipContent>
-			{title}
-		</TooltipContent>
+
+		<TooltipContent>{title}</TooltipContent>
 	</Tooltip>
 </TooltipProvider>
