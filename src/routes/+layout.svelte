@@ -117,11 +117,20 @@
 	/>
 </svelte:head>
 
-<Navbar />
-
 <ModeWatcher />
 <GlowEffect />
 
-<main id="main-content">
-	{@render children()}
-</main>
+<div class="lg:flex">
+	<Navbar />
+
+	<div class="mt-28 lg:mt-0 lg:w-1/2">
+		<main
+			id="main-content"
+			class="space-y-28"
+		>
+			{@render children()}
+		</main>
+
+		<!-- Footer goes here -->
+	</div>
+</div>

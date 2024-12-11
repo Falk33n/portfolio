@@ -38,8 +38,12 @@
 	});
 </script>
 
-<div class="pointer-events-none fixed left-0 top-0 z-[9999] size-full">
+<div
+	aria-hidden="true"
+	class="pointer-events-none fixed left-0 top-0 z-[9999] size-full"
+>
 	<div
+		aria-hidden="true"
 		class={cn(
 			'custom-transition custom-background pointer-events-none -translate-y-1/2 rounded-full opacity-10  mix-blend-soft-light',
 			isTouchDevice

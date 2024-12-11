@@ -6,9 +6,12 @@
 		LinkedInLink,
 		ResumeLink,
 	} from '$components/sections/layout';
+	import { cn } from '$utils';
+
+	let { class: className }: { class?: string } = $props();
 </script>
 
-<div class="mt-10 flex max-w-xs flex-wrap items-center gap-4">
+<div class={cn('mt-10 flex max-w-xs flex-wrap items-center gap-4', className)}>
 	<nav
 		aria-label="Social media and other navigation links"
 		class="flex flex-wrap items-center gap-4"
