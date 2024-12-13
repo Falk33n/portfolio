@@ -10,7 +10,7 @@
 <SkipToContent />
 
 <div
-	class="sticky top-0 flex w-full flex-col lg:h-[calc(100vh-12rem)] lg:w-1/2"
+	class="flex w-full flex-col lg:sticky lg:top-[6rem] lg:h-[calc(100vh-12rem)] lg:w-1/2"
 >
 	<Header />
 	<SocialMediaNav class="lg:hidden" />

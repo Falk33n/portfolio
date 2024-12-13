@@ -123,10 +123,10 @@
 <div class="lg:flex">
 	<Navbar />
 
-	<div class="mt-28 lg:mt-0 lg:flex lg:w-1/2 lg:flex-col">
+	<div class="lg:mt-0 lg:flex lg:w-1/2 lg:flex-col">
 		<main
 			id="main-content"
-			class="space-y-28"
+			class="mb-28 space-y-28 max-lg:mt-28"
 		>
 			{@render children()}
 		</main>
