@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { GlowEffect } from '$components/decorative';
-	import { Navbar } from '$components/sections/layout';
+	import { Footer, Navbar } from '$components/sections/layout';
 	import '$src/app.css';
 	import { ModeWatcher } from 'mode-watcher';
 
@@ -18,7 +18,7 @@
 		content="width=device-width, initial-scale=1.0"
 	/>
 	<meta charset="UTF-8" />
-	<meta
+	<!-- 	<meta
 		http-equiv="x-ua-compatible"
 		content="IE=edge"
 	/>
@@ -114,16 +114,16 @@
 	<link
 		rel="canonical"
 		href="https://example.com/"
-	/>
+	/> -->
 </svelte:head>
 
-<ModeWatcher />
+<ModeWatcher defaultMode="dark" />
 <GlowEffect />
 
 <div class="lg:flex">
 	<Navbar />
 
-	<div class="mt-28 lg:mt-0 lg:w-1/2">
+	<div class="mt-28 lg:mt-0 lg:flex lg:w-1/2 lg:flex-col">
 		<main
 			id="main-content"
 			class="space-y-28"
@@ -131,6 +131,6 @@
 			{@render children()}
 		</main>
 
-		<!-- Footer goes here -->
+		<Footer />
 	</div>
 </div>

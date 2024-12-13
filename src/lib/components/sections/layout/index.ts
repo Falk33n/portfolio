@@ -1,4 +1,6 @@
 import ContactLink from './ContactLink.svelte';
+import Footer from './Footer.svelte';
+import FooterLink from './FooterLink.svelte';
 import GithubLink from './GithubLink.svelte';
 import Header from './Header.svelte';
 import LinkedInLink from './LinkedInLink.svelte';
@@ -12,6 +14,8 @@ import SocialMediaNav from './SocialMediaNav.svelte';
 
 export {
 	ContactLink,
+	Footer,
+	FooterLink,
 	GithubLink,
 	Header,
 	LinkedInLink,
