@@ -24,7 +24,7 @@
 
 	<span
 		aria-hidden="true"
-		class="h-8 w-px bg-muted"
+		class="h-8 w-px bg-foreground/20 dark:bg-muted"
 	></span>
 	<ModeToggleButton />
 </div>
