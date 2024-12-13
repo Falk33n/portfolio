@@ -1,10 +1,10 @@
 <script lang="ts">
+	import { About } from '$components/sections';
 	import { H3 } from '$src/lib/components/typography';
 </script>
 
-<section id="about">
-	<H3 class="text-sm uppercase tracking-widest lg:sr-only">About</H3>
-</section>
+<About />
+
 <section id="experience">
 	<H3 class="text-sm uppercase tracking-widest lg:sr-only">Experience</H3>
 </section>
