@@ -3,10 +3,7 @@
 	import { P } from '$components/typography';
 </script>
 
-<section
-	id="about"
-	class="mb-96"
->
+<section id="about">
 	<SectionHeading>About</SectionHeading>
 
 	<P
