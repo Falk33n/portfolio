@@ -11,6 +11,7 @@ const config = {
 			$components: './src/lib/components',
 			$utils: './src/lib/utils',
 			$hooks: './src/lib/hooks',
+			$constants: './src/lib/constants',
 		},
 		adapter: adapter(),
 	},
