@@ -1,11 +1,11 @@
 <script lang="ts">
-	import { ModeToggleButton } from '$components/forms';
 	import {
 		ContactLink,
 		GithubLink,
 		LinkedInLink,
 		ResumeLink,
 	} from '$components/sections/layout';
+	import { ModeToggleButton } from '$components/themes';
 	import { cn } from '$utils';
 
 	let { class: className }: { class?: string } = $props();

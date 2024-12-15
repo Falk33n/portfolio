@@ -117,7 +117,7 @@
 	/> -->
 </svelte:head>
 
-<ModeWatcher defaultMode="dark" />
+<ModeWatcher />
 <GlowEffect />
 
 <div class="lg:flex">

@@ -1,4 +1,5 @@
 import type { SVGAttributes } from 'svelte/elements';
+import ArrowTopRight from './ArrowTopRight.svelte';
 import CommentShare from './CommentShare.svelte';
 import FilePencil from './FilePencil.svelte';
 import Github from './Github.svelte';
@@ -8,4 +9,12 @@ import Sun from './Sun.svelte';
 
 export type IconProps = SVGAttributes<SVGSVGElement>;
 
-export { CommentShare, FilePencil, Github, LinkedIn, MoonHalf, Sun };
+export {
+	ArrowTopRight,
+	CommentShare,
+	FilePencil,
+	Github,
+	LinkedIn,
+	MoonHalf,
+	Sun,
+};
