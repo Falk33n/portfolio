@@ -35,7 +35,7 @@
 	<a
 		rel="noopener noreferrer"
 		target="_blank"
-		class={cn('md:flex', className)}
+		class={cn('group md:flex', className)}
 		{...props}
 	>
 		{@render children?.()}

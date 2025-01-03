@@ -5,7 +5,7 @@
 </script>
 
 <H4
-	class="mb-1.5 mt-3 text-xs font-medium uppercase tracking-widest text-foreground/40 dark:text-foreground/60"
+	class="mb-1.5 mt-3 text-xs font-medium uppercase tracking-widest text-foreground/60"
 >
 	<time>{@html timeline}</time>
 </H4>

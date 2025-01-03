@@ -33,8 +33,11 @@
 	let {
 		ref = $bindable(null),
 		href,
-		class: className,
+		'class': className,
 		variant = 'default',
+		'aria-label': ariaLabel,
+		target = '_blank',
+		rel = target === '_blank' ? 'noreferrer noopener' : undefined,
 		children,
 		...restProps
 	}: WithElementRef<HTMLAttributes<HTMLSpanElement>> &
@@ -47,6 +50,9 @@
 	<a
 		bind:this={ref}
 		{href}
+		{rel}
+		{target}
+		aria-label={`${ariaLabel}, opens in a new tab`}
 		class={cn(badgeVariants({ variant, className }))}
 		{...restProps}
 	>
