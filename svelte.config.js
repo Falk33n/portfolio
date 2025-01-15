@@ -1,4 +1,4 @@
-import adapter from '@sveltejs/adapter-auto';
+import vercelAdapter from '@sveltejs/adapter-vercel';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
 /** @type {import('@sveltejs/kit').Config} */
@@ -13,7 +13,7 @@ const config = {
 			$hooks: './src/lib/hooks',
 			$constants: './src/lib/constants',
 		},
-		adapter: adapter(),
+		adapter: vercelAdapter(),
 	},
 };
 export default config;

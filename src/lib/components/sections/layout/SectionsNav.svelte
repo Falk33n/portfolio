@@ -17,7 +17,7 @@
 
 	onMount(() => {
 		const observer = new IntersectionObserver(observeSections, {
-			threshold: 0.5,
+			threshold: 0.8,
 		});
 
 		sections.forEach((id) => {

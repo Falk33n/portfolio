@@ -8,7 +8,7 @@
 	import { Button as Link } from '$components/forms';
 	import { CommentShare } from '$components/icons';
 
-	const contactTitle = 'Go to the contact page';
+	const contactTitle = 'Send Tim Falk an email';
 </script>
 
 <TooltipProvider>
@@ -16,7 +16,7 @@
 		<TooltipTrigger>
 			{#snippet child({ props })}
 				<Link
-					href="https://github.com/Falk33n"
+					href="mailto:tim.falk00@gmail.com"
 					aria-label={contactTitle}
 					variant="outline"
 					size="icon"

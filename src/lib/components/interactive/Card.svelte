@@ -14,7 +14,6 @@
 	onMount(() => {
 		const updateMediaQuery = () => {
 			isLargeScreen = window.innerWidth >= 1024;
-			console.log(isLargeScreen);
 		};
 
 		updateMediaQuery();
@@ -35,7 +34,10 @@
 	<a
 		rel="noopener noreferrer"
 		target="_blank"
-		class={cn('group md:flex', className)}
+		class={cn(
+			'group -ml-4 -mt-4 flex rounded-md border border-transparent p-4 pb-8 transition-all hover:border-border hover:bg-secondary/70 hover:shadow-md dark:hover:border-primary/15 dark:hover:bg-primary/5 dark:hover:shadow-none',
+			className,
+		)}
 		{...props}
 	>
 		{@render children?.()}

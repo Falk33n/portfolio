@@ -3,35 +3,38 @@
 		Card,
 		CardDescription,
 		CardHeader,
+		CardImage,
 		CardTags,
-		CardTimeline,
 	} from '$components/interactive';
 	import { SectionEndHeading, SectionHeading } from '$components/sections';
-	import { EXPERIENCE_CARDS } from '$constants';
+	import { PROJECT_CARDS } from '$constants';
 </script>
 
 <section
-	id="experience"
+	id="projects"
 	class="lg:scroll-mt-20"
 >
-	<SectionHeading>Experience</SectionHeading>
+	<SectionHeading>Projects</SectionHeading>
 
-	{#each EXPERIENCE_CARDS as { company, desc, href, timeline, title, tags }}
+	{#each PROJECT_CARDS as { desc, href, title, src, alt, tags }}
 		<Card
 			{href}
 			class="mb-8 last:mb-0"
 		>
 			<span class="w-fit">
-				<CardTimeline {timeline} />
+				<CardImage
+					{href}
+					{alt}
+					{src}
+				/>
 			</span>
 			<div>
 				<CardHeader
 					{href}
-					{company}
 					{title}
 				/>
 				<CardDescription
-					{company}
+					{title}
 					{desc}
 				/>
 				<CardTags {tags} />
@@ -40,9 +43,9 @@
 	{/each}
 
 	<SectionEndHeading
-		href="/"
-		ariaLabel="Go to Tim Falk's resumé, opens in a new tab"
+		href="https://github.com/Falk33n?tab=repositories"
+		ariaLabel="Go to Tim Falk's GitHub repositories, opens in a new tab"
 	>
-		View full Resumé
+		View all projects
 	</SectionEndHeading>
 </section>

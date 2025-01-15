@@ -3,7 +3,10 @@
 	import { P } from '$components/typography';
 </script>
 
-<section id="about">
+<section
+	id="about"
+	class="lg:scroll-mt-24"
+>
 	<SectionHeading>About</SectionHeading>
 
 	<P

@@ -40,10 +40,14 @@
 		rel = target === '_blank' ? 'noreferrer noopener' : undefined,
 		children,
 		...restProps
-	}: WithElementRef<HTMLAttributes<HTMLSpanElement>> &
-		WithElementRef<HTMLAnchorAttributes> & {
-			variant?: BadgeVariant;
-		} = $props();
+	}: Omit<
+		WithElementRef<HTMLAttributes<HTMLSpanElement>> &
+			WithElementRef<HTMLAnchorAttributes>,
+		'class'
+	> & {
+		variant?: BadgeVariant;
+		class?: string;
+	} = $props();
 </script>
 
 {#if href}

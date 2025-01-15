@@ -117,8 +117,11 @@
 	/> -->
 </svelte:head>
 
-<ModeWatcher />
 <GlowEffect />
+<ModeWatcher
+	defaultMode="dark"
+	disableTransitions
+/>
 
 <div class="lg:flex">
 	<Navbar />
@@ -126,7 +129,7 @@
 	<div class="lg:mt-0 lg:flex lg:w-1/2 lg:flex-col">
 		<main
 			id="main-content"
-			class="mb-28 space-y-28 max-lg:mt-28"
+			class="mb-28 space-y-28 max-lg:mt-28 md:scroll-mt-28"
 		>
 			{@render children()}
 		</main>
@@ -134,3 +137,10 @@
 		<Footer />
 	</div>
 </div>
+
+<!-- 
+  FINISH CV, MAKE PERSONAL LETTER TEMPLATE, MAKE PDF CV, THEN ADD LINK TO 
+  PDF IN EXPERIENCE END HEADING AND THE ICON LINK BUTTON FOR RESUME IN NAV, FIX FAVICON AND META TAGS IN LAYOUT, WRITE README FILE AND LICENSE FILE
+
+  FINALLY DEPLOY TO VERCEL (VERCEL TAKES CARE OF THE BUILD FOR YOU, JUST PUSH YOUR LATEST CHANGES TO GITHUB)
+ -->

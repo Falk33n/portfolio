@@ -12,10 +12,11 @@
 		"lint": "prettier --check . && eslint ."
 	},
 	"devDependencies": {
-		"@eslint/compat": "^1.2.4",
 		"@sveltejs/adapter-auto": "^3.3.1",
 		"@sveltejs/kit": "^2.15.1",
 		"@sveltejs/vite-plugin-svelte": "^5.0.3",
+		"@sveltejs/adapter-vercel": "^5.5.2",
+		"@eslint/compat": "^1.2.4",
 		"@types/eslint-config-prettier": "^6.11.3",
 		"autoprefixer": "^10.4.20",
 		"bits-ui": "^1.0.0-next.76",

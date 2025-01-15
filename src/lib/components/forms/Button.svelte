@@ -60,7 +60,7 @@
 		type = 'button',
 		children,
 		...restProps
-	}: ButtonProps = $props();
+	}: Omit<ButtonProps, 'class'> & { class?: string } = $props();
 </script>
 
 {#if href}
