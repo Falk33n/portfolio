@@ -35,7 +35,7 @@ Welcome to the repository for my Full Stack Developer Portfolio, built with Svel
 
 - [ShadCN-Svelte](https://next.shadcn-svelte.com/) - For UI components.
 
-- [Vercel](https://vercel.com/) Hosting for seamless deployment and scalability.
+- [Vercel](https://vercel.com/) - For seamless deployment and scalability.
 
 <hr>
 
