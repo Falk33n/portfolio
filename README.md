@@ -2,7 +2,7 @@
 
 Welcome to the repository for my Full Stack Developer Portfolio, built with SvelteKit. This project showcases my skills and expertise in full-stack web development through an elegant and performant portfolio website.
 
-<hr>
+<hr style="height:1px;">
 
 ### Table of Contents
 
@@ -11,7 +11,7 @@ Welcome to the repository for my Full Stack Developer Portfolio, built with Svel
 - [Installation](#installation)
 - [License](#license)
 
-<hr>
+<hr style="height:1px;">
 
 ### Features
 
@@ -25,7 +25,7 @@ Welcome to the repository for my Full Stack Developer Portfolio, built with Svel
 
 - Accessibility: Adheres to web accessibility standards.
 
-<hr>
+<hr style="height:1px;">
 
 ### Technologies Used
 
@@ -37,7 +37,7 @@ Welcome to the repository for my Full Stack Developer Portfolio, built with Svel
 
 - [Vercel](https://vercel.com/) Hosting for seamless deployment and scalability.
 
-<hr>
+<hr style="height:1px;">
 
 ### Installation
 
@@ -73,12 +73,12 @@ cd <project-name>
 http://localhost:5173
 ```
 
-<hr>
+<hr style="height:1px;">
 
 ### License
 
 This project is licensed under the MIT License.
 
-<hr>
+<hr style="height:1px;">
 
 Feel free to reach out with any questions or feedback! You can contact me directly at [tim.falk00@gmail.com](mailto:tim.falk00@gmail.com).
