@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://portfolio-falk33ns-projects.vercel.app/sitemap.xml

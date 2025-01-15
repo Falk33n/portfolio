@@ -40,7 +40,7 @@
 	{/each}
 
 	<SectionEndHeading
-		href="/resume.pdf"
+		href="/files/resume.pdf"
 		ariaLabel="Go to Tim Falk's resumé, opens in a new tab"
 	>
 		View full Resumé

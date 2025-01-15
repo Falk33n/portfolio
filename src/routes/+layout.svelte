@@ -8,7 +8,6 @@
 </script>
 
 <svelte:head>
-	<title>Tim Falk | Full Stack Developer</title>
 	<meta
 		name="description"
 		content="Tim Falk's portfolio showcasing projects, skills, and contact information as a Full Stack Developer. I create accessible, scalable, and modern web solutions."
@@ -18,9 +17,9 @@
 		content="width=device-width, initial-scale=1.0"
 	/>
 	<meta charset="UTF-8" />
-	<!-- 	<meta
-		http-equiv="x-ua-compatible"
-		content="IE=edge"
+	<meta
+		name="apple-mobile-web-app-title"
+		content="Portfolio"
 	/>
 	<meta
 		name="author"
@@ -36,11 +35,11 @@
 	/>
 	<meta
 		property="og:image"
-		content="https://example.com/og-image.jpg"
+		content="https://portfolio-falk33ns-projects.vercel.app/images/me.png"
 	/>
 	<meta
 		property="og:url"
-		content="https://example.com/"
+		content="https://portfolio-falk33ns-projects.vercel.app/"
 	/>
 	<meta
 		property="og:type"
@@ -64,19 +63,19 @@
 	/>
 	<meta
 		name="twitter:image"
-		content="https://example.com/og-image.jpg"
+		content="https://portfolio-falk33ns-projects.vercel.app/images/me.png"
 	/>
 	<meta
 		name="twitter:site"
-		content="@yourtwitterhandle"
+		content="@TimFalk525712"
 	/>
 	<meta
 		name="twitter:creator"
-		content="@yourtwitterhandle"
+		content="@TimFalk525712"
 	/>
 	<meta
 		name="keywords"
-		content="Tim Falk, Full Stack Developer, Web Development, Portfolio, Accessible Design, Scalable Solutions, Software Engineer, Web Developer, Svelte, SvelteKit, Next, React, AI, JavaScript, HTML, CSS, TypeScript, Tailwind CSS, tRPC, Prisma, MySQL, Next T3 Stack"
+		content="Tim Falk, Full Stack Developer, Web Development, Portfolio, Accessible Design, Scalable Solutions, Software Engineer, Web Developer, Svelte, SvelteKit, Next, React, AI, JavaScript, HTML, CSS, TypeScript, Tailwind CSS, tRPC, Prisma, MySQL, Next T3 Stack, Python, PyDantic, PyTorch, PyLint, Black, Hugging Face"
 	/>
 	<meta
 		name="robots"
@@ -84,37 +83,37 @@
 	/>
 	<meta
 		name="theme-color"
-		content="#ffffff"
+		content="#020617"
+	/>
+	<link
+		rel="canonical"
+		href="https://portfolio-falk33ns-projects.vercel.app/"
 	/>
 	<link
 		rel="icon"
-		href="/favicon.ico"
+		type="image/png"
+		href="/favicon/favicon-96x96.png"
+		sizes="96x96"
+	/>
+	<link
+		rel="icon"
+		type="image/svg+xml"
+		href="/favicon/favicon.svg"
+	/>
+	<link
+		rel="shortcut icon"
+		href="/favicon/favicon.ico"
 	/>
 	<link
 		rel="apple-touch-icon"
 		sizes="180x180"
-		href="/apple-touch-icon.png"
-	/>
-	<link
-		rel="icon"
-		type="image/png"
-		sizes="32x32"
-		href="/favicon-32x32.png"
-	/>
-	<link
-		rel="icon"
-		type="image/png"
-		sizes="16x16"
-		href="/favicon-16x16.png"
+		href="/favicon/apple-touch-icon.png"
 	/>
 	<link
 		rel="manifest"
-		href="/site.webmanifest"
+		href="/favicon/site.webmanifest"
 	/>
-	<link
-		rel="canonical"
-		href="https://example.com/"
-	/> -->
+	<title>Tim Falk | Full Stack Developer</title>
 </svelte:head>
 
 <GlowEffect />
@@ -137,8 +136,3 @@
 		<Footer />
 	</div>
 </div>
-
-<!-- 
- FIX FAVICON AND META TAGS IN LAYOUT, WRITE README FILE AND GITHUB DESCRIPTION
-
- -->
