@@ -16,7 +16,7 @@
 		<TooltipTrigger>
 			{#snippet child({ props })}
 				<Link
-					href="/"
+					href="/resume.pdf"
 					aria-label={resumeTitle}
 					variant="outline"
 					size="icon"

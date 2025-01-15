@@ -46,6 +46,6 @@
 		href="https://github.com/Falk33n?tab=repositories"
 		ariaLabel="Go to Tim Falk's GitHub repositories, opens in a new tab"
 	>
-		View all projects
+		View over 50+ projects
 	</SectionEndHeading>
 </section>
